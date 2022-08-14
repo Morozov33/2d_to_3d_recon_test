@@ -24,3 +24,5 @@
 ### 4. [HMR](https://github.com/akanazawa/hmr) ###
   1. Не запускается на локальной машине, при установке зависимостей pip конфликтует с библиотекой TensorFlow:
   `Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621`
+
+*to be continued...*
