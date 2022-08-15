@@ -32,9 +32,12 @@
   1. Не запускается на локальной машине, при установке зависимостей pip конфликтует с библиотекой TensorFlow:
   `Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621`
   
-### 5. PIFU ###
+### 5. [PIFU](https://github.com/shunsukesaito/PIFu) ###
   1. Ранняя версия библиотеки PIFU
   2. Качество отрисовки модели ниже, но зато переносит текстуры. Результат - PIFU/result_test_4.png.
   3. С НЕ полноростовым изображением по прежнему работает хуже, результат - PIFU/result_test_5.png
+
+### 6. Другие инструменты ###
+  Найти другие возможные инструменты для реализации 2d-to-3d реконструкции.
 
 *to be continued...*
