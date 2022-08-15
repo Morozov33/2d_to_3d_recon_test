@@ -18,6 +18,9 @@
 
 ### 3. [DECA](https://github.com/YadiraF/DECA) ###
   1. Не запускается на локальной машине из-за того, что используется библиотека CUDA, которая не поддерживается на macOS.
+  From (https://github.com/pytorch/pytorch#installation):
+  `If you want to compile with CUDA support, install the following (note that CUDA is not supported on macOS)`
+
   2. Пока не удалось протестировать в Google Cloud, при установки зависимостей возникают конфликты версий при установке библиотек pytorch и CUDA.
   
   
