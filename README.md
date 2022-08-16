@@ -67,5 +67,7 @@
  
 `/content/DECA/decalib/utils/renderer.py:280: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output contiguous tensor even if some of the inputs are in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:918.)
   images = images*alpha_images + background*(1.-alpha_images`
+  
+  Следует отметить, что в DECA полность покрытая текстурами модель получается за счет использования нескольких изображений. 
 
 *to be continued...*
