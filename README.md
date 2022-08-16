@@ -44,7 +44,16 @@
   Для переноса текстур полностью необходим файл FLAME_albedo_from_BFM.npz - конвертировал его из датасета BFM на локальной машине. Файл весит 1,26 Гб, пока не получилось загрузить его в Google Cloud из-за размера. На локальной машине не запускается DECA по прежнему из-за отсутствия поддержки CUDA (Nvidia прекратил поддержку в 2017г из-за ссоры с Apple) (??? Попробовать раннии версии).
  
 ## 16.08.22 ##
-### Другие инструменты ###
-  Найти другие возможные инструменты для реализации 2d-to-3d реконструкции.
+Прочитано Readme к библиотекам:
+1.[SynergyNet](https://github.com/choyingw/SynergyNet)
+2.[Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction)
+3.[DAD-3DHeads](https://github.com/PinataFarms/DAD-3DHeads)
+4.[eos](https://github.com/patrikhuber/eos)
+5.[extreme_3d_faces](https://github.com/anhttran/extreme_3d_faces)
+6.[NextFace](https://github.com/abdallahdib/NextFace)
+7.[3DMM-Fitting-Pytorch](https://github.com/ascust/3DMM-Fitting-Pytorch)
+8.[GANFit](https://github.com/barisgecer/GANFit)
+
+Большинство этих моделей либо основаны на DECA и не превосходят ее по параметрам. Так же многие модели используют CUDA, что делает невозможным запуск на локальной машине под MacOS.
 
 *to be continued...*
