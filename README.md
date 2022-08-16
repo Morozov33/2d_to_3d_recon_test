@@ -60,11 +60,12 @@
 В Google Cloud добавлена FLAME модель FLAME_albedo_from_BFM.npz. Результаты ее использования - файлы [result_test_5_DECA_16.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_5_DECA_16.08.22.png) и [result_test_6_DECA_16.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_6_DECA_16.08.22.png).
 Результаты не сильно отличаются от обычной версии DECA. Возможно это связанно с предупреждениями, возникающими при моделировании:
 
-`/usr/local/lib/python3.7/dist-packages/torch/nn/functional.py:3121: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
-  "See the documentation of nn.Upsample for details.".format(mode))
-/content/DECA/decalib/deca.py:128: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output channels_last tensor even if some of the inputs are not in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:924.)
-  uv_detail_normals = uv_detail_normals*self.uv_face_eye_mask + uv_coarse_normals*(1.-self.uv_face_eye_mask)
-/content/DECA/decalib/utils/renderer.py:280: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output contiguous tensor even if some of the inputs are in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:918.)
+`/usr/local/lib/python3.7/dist-packages/torch/nn/functional.py:3121: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details. "See the documentation of nn.Upsample for details.".format(mode))`
+
+`/content/DECA/decalib/deca.py:128: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output channels_last tensor even if some of the inputs are not in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:924.)
+ uv_detail_normals = uv_detail_normals*self.uv_face_eye_mask + uv_coarse_normals*(1.-self.uv_face_eye_mask)`
+ 
+`/content/DECA/decalib/utils/renderer.py:280: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output contiguous tensor even if some of the inputs are in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:918.)
   images = images*alpha_images + background*(1.-alpha_images`
 
 *to be continued...*
