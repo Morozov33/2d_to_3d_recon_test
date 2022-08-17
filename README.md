@@ -1,6 +1,6 @@
 ## Результаты тестового задания по 2d-to-3d реконструкции. ##
 
-Изображения для тестирования в папке test.
+Исходные изображения для тестирования в папке test.
 
 ## 14.08.22 ##
 ### [Mersh-R-CNN](https://github.com/facebookresearch/meshrcnn) ###
@@ -67,10 +67,10 @@
  
 `/content/DECA/decalib/utils/renderer.py:280: UserWarning: Mixed memory format inputs detected while calling the operator. The operator will output contiguous tensor even if some of the inputs are in channels_last format. (Triggered internally at  /pytorch/aten/src/ATen/native/TensorIterator.cpp:918.)
   images = images*alpha_images + background*(1.-alpha_images`
-  
-  Следует отметить, что в DECA полность покрытая текстурами модель получается за счет использования нескольких изображений. 
-  
-  Возможно ли смоделировтать 3D модель используя DECA а затем перенести не нее текстуру используя функции из библиотеки PIFU???
-  Библиотека https://github.com/TimoBolkart/BFM_to_FLAME для конвертации мерша.
 
-*to be continued...*
+## 17.08.22 ##
+### 1. [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction) ###
+Поддерживает Linux и Windows, значит не получится запустить на локалльной машине.
+
+### 2. DECA ###
+Результаты: [result_test_5_DECA_17.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_5_DECA_17.08.22.png) и [result_test_6_DECA_17.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_6_DECA_17.08.22.png). Использование модели FLAME не дает полной отрисовки текстур, как в демо-примере от разработчиков. В чем кроется причина - не понятно, написал issue к разработчикам. 
