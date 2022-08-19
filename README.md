@@ -74,3 +74,8 @@
 
 ### 2. DECA ###
 Результаты: [result_test_5_DECA_17.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_5_DECA_17.08.22.png) и [result_test_6_DECA_17.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_6_DECA_17.08.22.png). Использование модели FLAME не дает полной отрисовки текстур, как в демо-примере от разработчиков. В чем кроется причина - не понятно, написал issue к разработчикам. 
+
+## 19.08.22 ##
+### DECA ###
+Удалось полностью перенести текстуру на 3D модель с помощью модели FLAME выполняя код в Google Cloud. Результаты: [result_test_5_DECA_19.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_5_DECA_19.08.22.png) и [result_test_6_DECA_19.08.22.png](https://github.com/Morozov33/2d_to_3d_recon_test/blob/main/DECA/result_test_6_DECA_19.08.22.png).
+Качество не очень высокое (связанно ли это с качеством исходного изображения?), а так же не отрисовывается прическа (задать вопрос разработчикам).
